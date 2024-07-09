@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Queens";
+  src: url("./../assets/fonts/Queens_W-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mars Sans Web";
+  src: url("./../assets/fonts/MarrSans-Regular-Web.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mars Sans Web";
+  src: url("./../assets/fonts/MarrSans-Medium-Web.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+}
+
+@media (min-width: 800px) {
+}
+
+.page8 .heading {
+  font-family: Queens, sans-serif;
+  font-size: 52px;
+  text-align: center;
+}
+
+.page8 .accordion {
+  /* margin-bottom: 30px; */
+}
+
+.page8 .accordion-item {
+  border: 0;
+}
+
+.page8 .accordion-item:active {
+  border: 0;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button:not(.collapsed)::after,
+.accordion-button {
+  background-color: transparent;
+  font-weight: 100;
+  color: black;
+  font-size: 0.8em;
+}
+
+.footer {
+  font-family: Mars Sans Web, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li{
+  list-style: none;
+}
+
+.footer a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  }
+
+  .footer a:hover{
+    text-decoration: underline;
+  }
+.footer span{
+  padding-bottom: 10px;
+}
+
+.hr {
+  opacity: 100;
+  margin: 10px;
+}
+
+.chat_div{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50px;
+  background-color: white;
+  padding: 10px;
+  z-index: 100;
+}
+.accesibility_div{
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  border-radius: 50px;
+  background-color: black;
+  z-index: 100;
+}
+
+.accesibility_div img{
+  width: 45px;
+}
+
+.empty_div{
+  height: 50px;
+}
+
+.cornerarrow {
+  position: relative;
+}
+
+.cornerarrow::after {
+  content: url(./../assets/svg/corner_arrow.svg);
+  position: absolute;
+  margin-left: 1px;
+  top: 20%;
+}
+
+
+@media (min-width:1024px){
+  .footer{
+    display: flex;
+  }
+}
