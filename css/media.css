@@ -1,0 +1,85 @@
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+  }
+}
+
+@media (min-width: 800px) {
+}
+
+@media (max-width: 766px) /* 0 - 766 */ {
+
+
+
+  .hide-phone {
+    display: none;
+  }
+  
+  .phone-only {
+    display: block;
+  }
+
+
+
+  .main {
+    margin-top: 38px;
+  }
+
+
+
+
+
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .page1 .content_div > * {
+    position: relative;
+    z-index: 1; /* Ensures the content is above the background image */
+  }
+  
+  .page1 .inner_div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    width: 100%;
+    padding: 0 27px;
+    margin: 92px 0;
+  }
+  
+  .page1 .inner_div .content_div {
+    width: 276px;
+  }
+  .page1 .inner_div .content_div h1 {
+    font-family: "Queens", serif;
+    font-size: 35px;
+    margin: 0 0 0 22px;
+  }
+  
+  .page1 .inner_div .content_div button {
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 12px;
+    padding: 16px 40px 14px;
+  }
+
+
+  .chat_div {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1278px) /*767 - 1278 */ {
+  .hide-phone {
+    display: block;
+  }
+
+  .phone-only {
+    display: none;
+  }
+}

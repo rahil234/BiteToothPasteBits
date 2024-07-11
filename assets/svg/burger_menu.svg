@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="-1 -1 32 32"
+    id="hamburger-black" y="3582">
+    <mask id="cpa" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30"
+        height="30">
+        <path fill="#131313" d="M0 0h30v30H0z" />
+    </mask>
+    <g mask="url(#cpa)">
+        <mask id="cpb" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30"
+            height="30">
+            <path fill="#131313" d="M0 0h30v30H0z" />
+        </mask>
+        <g mask="url(#cpb)">
+            <path
+                d="M4.375 22.043v-1.875h21.25v1.875H4.375Zm0-6.106v-1.875h21.25v1.875H4.375Zm0-6.105V7.957h21.25v1.875H4.375Z"
+                fill="#131313" />
+        </g>
+    </g>
+</svg>
