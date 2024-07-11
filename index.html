@@ -24,10 +24,10 @@
         <nav class="nav">
             <div>
 
-                <img src="./assets/svg/burger_menu.svg" alt="">
-                <img height="25px" src="./assets/svg/bite.svg" alt="">
+                <img class="menu-icon phone-only" src="./assets/svg/burger_menu.svg" alt="">
+                <img class="brand-icon" height="25px" src="./assets/svg/bite.svg" alt="">
             </div>
-            <ul class="nav-items">
+            <ul class="nav-items hide-phone">
                 <li>SHOP</li>
                 <li>ABOUT</li>
                 <li>OUR IMPACT</li>
@@ -41,7 +41,6 @@
     </header>
 
     <main class="main">
-
 
 
 
@@ -68,15 +67,40 @@
                     </h1>
                     <p>Clean up your routine with Toothpaste Bits. No plastic, no harsh chemicals – just a better way to
                         brush your teeth.</p>
-                    <button> <span>GET YOUR FREE WELCOME KIT</span></button>
+                    <button> <a href=""> GET YOUR FREE WELCOME KIT </a> </button>
                 </div>
             </div>
         </section>
 
-
-
-
-
+        <div class="brands_div">
+            <span class="hide-phone">AS SEEN IN</span>
+            <ul>
+                <li>
+                    <img src="./assets/brands/forbes-logo-113023.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/brands/oprah-magazine-logo-113023.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/brands/cosmopolitan-logo-113023.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/brands/womens-health-logo-113023.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/brands/vogue-logo-113023.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/brands/goop-113023.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/brands/elle-logo-113023.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/brands/people-logo-113023.png" alt="">
+                </li>
+            </ul>
+        </div>
 
 
         <section class="page2">
@@ -91,7 +115,7 @@
                 <div class="review_body">
                     <div class="scrollable_viewport">
 
-                        <div class="scrollable_div">
+                        <div class="scrollable_div" id="scroll_element">
                             <div class="card">
                                 <div class="text_div">
                                     <blockquote>No mess, cleans and whitens beautifully, and no plastic or repeat
@@ -234,24 +258,36 @@
                 <h3 class="heading">Shop Best Sellers</h3>
                 <div class="products-list">
                     <div class="product">
-                        <h3 class="title"><a href="">TOOTHPASTE BITS FLUORIDE-FREE</a></h3> <img class="product-img"
-                            src="./assets/porducts/pc-tpb-ff-4oz-mint-no-bg.webp" alt=""> <button class="btn">ADD TO
-                            BAG</button>
+                        <h3 class="title"><a href="">TOOTHPASTE BITS FLUORIDE-FREE</a></h3>
+                        <div class="product_body">
+                            <img class="product-img" src="./assets/porducts/pc-tpb-ff-4oz-mint-no-bg.webp" alt="">
+                            <button class="btn">ADD TO BAG</button>
+                        </div>
                     </div>
                     <div class="product">
-                        <h3 class="title"><a href="">TOOTHPASTE BITS WITH FLURIDE</a></h3> <img class="product-img"
-                            src="./assets/porducts/pc-tpb-wf-2oz-mint-fluoride-no-bg.webp" alt=""> <button
-                            class="btn">ADD TO BAG</button>
+                        <h3 class="title"><a href="">TOOTHPASTE BITS WITH FLURIDE</a></h3>
+                        <div class="product_body">
+                            <img class="product-img" src="./assets/porducts/pc-tpb-wf-2oz-mint-fluoride-no-bg.webp"
+                                alt=""> <button class="btn">ADD TO BAG</button>
+                        </div>
                     </div>
                     <div class="product">
-                        <h3 class="title"><a href="">DEODRANT SET</a></h3> <img class="product-img"
-                            src="./assets/porducts/pdp-product-card-desktop-silver-case-open-no-bg.webp" alt=""> <button
-                            class="btn">ADD TO BAG</button>
+                        <h3 class="title"><a href="">DEODRANT SET</a></h3>
+                        <div class="product_body">
+
+                            <img class="product-img"
+                                src="./assets/porducts/pdp-product-card-desktop-silver-case-open-no-bg.webp" alt="">
+                            <button class="btn">ADD TO BAG</button>
+                        </div>
                     </div>
                     <div class="product">
-                        <h3 class="title"><a href="">MOUTHWASH BITS</a></h3> <img class="product-img"
-                            src="./assets/porducts/pc-mouthwash-no-bg.webp" alt=""> <button class="btn">ADD TO
-                            BAG</button>
+                        <h3 class="title"><a href="">MOUTHWASH BITS</a></h3>
+                        <div class="product_body">
+
+                            <img class="product-img" src="./assets/porducts/pc-mouthwash-no-bg.webp" alt=""> <button
+                                class="btn">ADD TO
+                                BAG</button>
+                        </div>
                     </div>
                 </div>
             </div>
