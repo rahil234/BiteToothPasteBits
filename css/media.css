@@ -1,6 +1,6 @@
 @media (min-width: 1024px) {
   .footer {
-    display: flex;
+    /* display: flex; */
   }
 }
 
@@ -36,37 +36,70 @@
   }
 
 
-  .page1 .content_div > * {
-    position: relative;
-    z-index: 1; /* Ensures the content is above the background image */
-  }
-
   .page1 .inner_div {
-    display: flex;
+    align-items: start;
     justify-content: center;
     text-align: center;
-    color: black;
-    width: 100%;
-    padding: 0 27px;
-    margin: 92px 0;
+    width: 30;
+    height: 90vh;
+    margin: 80px auto;
   }
-
+  
   .page1 .inner_div .content_div {
-    width: 276px;
+    flex-basis: 33.3%;
+    color: black;
   }
   .page1 .inner_div .content_div h1 {
     font-family: "Queens", serif;
-    font-size: 35px;
-    margin: 0 0 0 22px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    line-height: 0.8em;
   }
-
+  
+  .page1 .inner_div .content_div p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
   .page1 .inner_div .content_div button {
     background-color: black;
-    color: white;
     border: 0;
-    font-size: 12px;
-    padding: 16px 40px 14px;
+    margin: 0 auto;
   }
+  
+  .page1 .inner_div .content_div button a {
+    padding: 16px 30px 14px;
+    font-size: 12px;
+    width: fit-content;
+  }
+  
+
+
+
+  .brands_div {
+  }
+  
+  .brands_div h3{
+    margin: 20px;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  
+  .brands_div ul {
+    overflow-x: hidden;
+  }
+  
+  .brands_div li {
+    display: block;
+    margin-right: 10px;
+  }
+  
+  .brands_div img {
+    width: 100px;
+    /* width: 100%; */
+  }
+
+
 
 
   .page7 .products-list {

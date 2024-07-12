@@ -53,7 +53,6 @@ a {
   z-index: 1000;
   width: 100%;
   border-bottom: 1px solid black;
-
 }
 
 .header .offer_div {
@@ -70,20 +69,18 @@ a {
   font-size: 14px;
 }
 
-
-
 .header .nav {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 15px;
-  padding: 10px 27px;
+  padding: 20px 27px;
 }
 
 .header .nav .brand-icon {
   margin-left: 5px;
-  height: 33px;
+  height: 35px;
 }
 
 .header .nav ul {
@@ -98,8 +95,6 @@ a {
   padding: 20px;
 }
 
-
-
 .main {
   margin-top: 35px;
 }
@@ -107,7 +102,7 @@ a {
 .page1 {
   position: relative;
   width: 100%;
-  min-height: 50vh; /* or any desired height */
+  min-height: 50vh;
   max-height: 93vh;
   overflow: hidden;
 }
@@ -125,7 +120,7 @@ a {
 
 .page1 .inner_div .content_div > * {
   position: relative;
-  z-index: 1; /* Ensures the content is above the background image */
+  z-index: 1; 
 }
 
 .page1 .inner_div {
@@ -142,6 +137,7 @@ a {
 }
 
 .page1 .inner_div .content_div {
+  max-height: 30vh;
   flex-basis: 33.3%;
 }
 .page1 .inner_div .content_div h1 {
@@ -158,24 +154,38 @@ a {
   max-width: 350px;
 }
 
-.page1 .inner_div .content_div button{
+.page1 .inner_div .content_div button {
   background-color: black;
   border: 0;
   max-width: 350px;
   margin: 0 auto;
 }
 
-.page1 .inner_div .content_div button a{
+.page1 .inner_div .content_div button a {
   display: block;
-  padding: 16px 40px 14px;
+  padding: 16px 60px 14px;
   font-size: 12px;
   color: white;
-  width: 350px;
+  white-space: nowrap;
+
 }
 
 .brands_div {
   display: flex;
   align-items: center;
+  text-align: center;
+  /* width: 100vw; */
+  overflow-x: hidden;
+}
+
+.brands_div .inner_div{
+  width: 100%;
+}
+
+.brands_div h3{
+  margin: 20px;
+  font-size: 16px;
+  white-space: nowrap;
 }
 
 .brands_div span {
@@ -187,17 +197,17 @@ a {
   display: flex;
   align-items: center;
   list-style-type: none;
-  padding: 20px;
+  padding: 20px 20px;
   margin: 10px;
 }
 
 .brands_div li {
-  margin-right: 40px; /* Adjust the spacing between items */
+  margin-right: 40px;
 }
 
 .brands_div img {
-  display: block; /* Ensures images are block elements */
-  width: 80%;
+  display: block; 
+  width: 100%;
 }
 
 .page3 {
@@ -219,33 +229,28 @@ a {
 }
 
 .page3 .scrollable_viewport {
-  overflow-x: hidden; /* Allows horizontal scrolling if content overflows */
-  white-space: nowrap; /* Prevents contents from wrapping */
-  padding: 45px 0 40px; /* Adjust padding as needed */
+  overflow-x: hidden; 
+  white-space: nowrap; 
+  padding: 45px 0 40px; 
 }
 
 .page3 .scrollable_div {
-  display: flex; /* Flex container for cards */
-  flex-wrap: nowrap; /* Prevents flex items from wrapping */
-  /* transform: translateX(-20%); */
+  display: flex; 
+  flex-wrap: nowrap; 
   transition: transform 1s ease;
 }
 
 .page3 .card {
   display: flex;
   flex-direction: row;
-  flex: 0 0 auto; /* Ensures cards do not grow or shrink */
-  width: 707px; /* Adjust width as necessary */
-  margin-right: 10px; /* Optional: Adds spacing between cards */
+  flex: 0 0 auto;
+  width: 707px; 
+  margin-right: 10px; 
   border: 1px solid white;
   background-color: inherit;
   color: white;
-  overflow: hidden; /* Hides overflow content */
+  overflow: hidden;
   border-radius: 0;
-}
-
-.page3 .card.move-left {
-  transform: translateX(-70%); /* Move card left by 70% */
 }
 
 .page3 .card .text_div {
@@ -362,9 +367,21 @@ a {
 }
 
 .footer {
+  /* width: 100vw; */
+  overflow-x: hidden;
   font-family: "Mars Sans Web", sans-serif;
-  background-color: black;
   color: white;
+}
+
+.footer .inner_div {
+  display: flex;
+  gap: 10px;
+  background-color: black;
+}
+
+.footer .inner_div .second_div {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer ul {
@@ -387,6 +404,10 @@ a {
 .footer span {
   padding-bottom: 10px;
 }
+
+
+
+
 
 .image-width {
   max-width: 100%;
@@ -457,6 +478,6 @@ a {
   margin: 0;
 }
 
-section {
+section, .header {
   /* overflow-x: hidden; */
 }
